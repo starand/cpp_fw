@@ -1,0 +1,15 @@
+.*\.(cpp|c|h|hpp|inl|inc|mak|vcproj|vsprops|dsp|sln|dsw|dsm)$: client-eol=native
+.*\.(map|exp|def|manifest|dtd)$: client-eol=native
+.*\.(ini|xml|Xml|xsl|sql|txt|cfg): client-eol=native
+.*\.(bat|cmd|vbs|js): client-eol=crlf
+.*\.(pas|inc|dpk|dfm): client-eol=crlf
+.*\.sh$: x|client-eol=lf
+.*\.pl$: x|client-eol=native
+[mM]akefile\.?.*: client-eol=native
+make*: client-eol=native
+configure\.in$: client-eol=native
+configure$: x|client-eol=native
+runConfigure$: x|client-eol=native
+config\.(guess|sub): x|client-eol=native
+config\.h\.in$: client-eol=native
+.*\.h\.template$: client-eol=native
