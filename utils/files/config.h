@@ -3,6 +3,8 @@
 #include <memory>
 #include <json/value.h>
 
+namespace FileUtils
+{
 
 class config_t
 {
@@ -22,3 +24,6 @@ protected:
 protected:
     std::unique_ptr< Json::Value > m_json;
 };
+
+}
+
