@@ -3,11 +3,6 @@
 
 #include "platform.h"
 
-#include <string>
-#include <vector>
-#include <map>
-
-
 #ifdef WINDOWS
 
 #	include <windows.h>
@@ -25,7 +20,12 @@ typedef long long int int64;
 //typedef uint64_t uint64;
 typedef unsigned long long int uint64;
 
+
 #endif
+
+#include <string>
+#include <vector>
+#include <map>
 
 
 #define BITSINBYTE	8

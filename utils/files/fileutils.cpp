@@ -31,20 +31,9 @@ const char szFolderSeparator[] = "\\";
 #else
 const char szFolderSeparator[] = "/";
 #endif
-const char g_szUnableOpenFile[] = "Unable to open file \'%s\'";
-
-const char cSlash = '/';
-const char cBackSlash = '\\';
-
-const char szSlash[] = "/";
-const char szSlashes[] = "\\/";
-
-const char chDor = '.';
-const char chColon = ':';
 
 const char szDefaultFilter[] = "*.*";
 
-static const char szTimeForamt[] = "%02d/%02d/%d %02d:%02d:%02d";
 
 namespace FileUtils {
 
@@ -1081,7 +1070,7 @@ const char* GetExt( const char* szFileName, bool bWithDot /*= false*/ )
 	if( szFileName )
 	{
 		size_t nLen = strlen( szFileName );
-		for( size_t idx = nLen - 1; idx >= 0; --idx )
+		for( int idx = nLen - 1; idx >= 0; --idx )
 		{
 			if( szFileName[idx] == cSlash || szFileName[idx] == cBackSlash ) break;
 			if( szFileName[idx] == cDot )

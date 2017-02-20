@@ -15,7 +15,6 @@
 
 
 const char g_szEFileOpen[] = "Can\'t open file : %s";
-const char g_szSpaceChars[] = " \t";
 
 
 ////////////////////////////////////////////////////

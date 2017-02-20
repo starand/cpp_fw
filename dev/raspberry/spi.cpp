@@ -1,9 +1,9 @@
 #include "spi.h"
 
 #include "bcm2835.h"
-#include "asserts.h"
 
 #include <time.h>
+#include <assert.h>
 
 //////////////////////////////////////////////////
 // raspi_spi_t implementation
@@ -12,7 +12,7 @@ spi_t::spi_t()
 {
 	if (!bcm2835_init())
 	{
-		ASSERT_FAIL("Unable to init bcm2835 library");
+		assert("Unable to init bcm2835 library" && false);
 	}
 
 	bcm2835_spi_begin();
@@ -25,7 +25,6 @@ spi_t::spi_t()
 
 spi_t::~spi_t()
 {
-
 }
 
 

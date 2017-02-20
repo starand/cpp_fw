@@ -16,7 +16,7 @@ public:
     bool read_config( const std::string& config_file, bool short_name = false );
 
 public:
-    const Json::Value& operator[]( const std::string& name ) const;
+    virtual const Json::Value& operator[]( const std::string& name ) const;
 
 protected:
     virtual bool do_parse( );
